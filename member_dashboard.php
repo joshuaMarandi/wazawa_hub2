@@ -1,4 +1,8 @@
-<?php include 'header.php'; ?>
+<?php include 'header.php';
+ include 'member_sidebar.php'; 
+
+
+?>
 
 
 

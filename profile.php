@@ -1,6 +1,6 @@
 <?php
-// session_start();
-include 'db.php'; // Include your database connection file
+session_start(); // Start the session at the beginning of the script
+include 'db.php';
 
 // Check if the user is logged in
 if (!isset($_SESSION['user_id'])) {
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Your Profile - Wazawa Hub</title>
 </head>
 <body>
-    <?php include 'sidebar.php'; ?> <!-- Include the sidebar -->
+    <?php  include 'sidebar.php'; ?> 
     
     <div class="content">
         <h2>Your Profile</h2>

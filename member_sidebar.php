@@ -1,7 +1,10 @@
 <?php
 if (session_status() === PHP_SESSION_NONE) {
     session_start(); // Start the session only if it hasn't been started yet
-}?>
+}
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +21,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <div class="sidebar closed">
         <h2>Wazawa Hub</h2>
         <ul>
-            <li><a href="admin_dashboard.php">Dashboard</a></li>
+            <li><a href="member_dashboard.php">Dashboard</a></li>
             <li><a href="profile.php">Your Profile</a></li>
             <li><a href="events.php">Upcoming Events</a></li>
             <li><a href="projects.php">Community Projects</a></li>

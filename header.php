@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-YDAvC4gd+3GZNSFyoZ0XW8PtW0fxy5OcNGQogbmlHFnKy1WSrN1Ic4nAs2ye7QWZhU2uOgj2hOgCoXi8vNjZxw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Updated Font Awesome CDN -->
-
+    <link rel="icon" href="wazawa_hub.ico" type="image/x-icon"> <!-- Favicon link -->
+<link rel="apple-touch-icon" href="wazawahub.ico">
     <title>Header - wazawa_hub</title>
     <style>
         
@@ -35,6 +36,7 @@
     font-size: 24px;
 }
 
+
 .menu-items {
     display: none;
     background-color: #2196F3;
@@ -43,6 +45,7 @@
     right: 0;
     top: 40px;
 }
+
 .menu-items a:hover {
     background-color: #FFEB3B;
     color: black;
