@@ -20,5 +20,6 @@ include 'sidebar.php';
 <div class="content">
     <h2 style="margin-top: 30px;">Admin Dashboard</h2>
     <p>Welcome, Admin! Manage the community:</p>
+    <script src="js/sidebar.js"></script>
 </body>
 </html>

@@ -15,6 +15,7 @@ body {
     background-color: #4CAF50; /* Primary color */
     padding-top: 20px;
     z-index: 1;
+    transform: translateX(0); /* Initially visible */
     transition: transform 0.3s ease; /* Smooth transition */
 }
 
@@ -66,5 +67,17 @@ body {
         top: 10px;
         left: 10px;
         z-index: 2;
+    }
+}
+
+/* Content styles */
+.content {
+    margin-left: 260px; /* Space for sidebar on larger screens */
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        margin-left: 0; /* Remove margin on smaller screens */
     }
 }
