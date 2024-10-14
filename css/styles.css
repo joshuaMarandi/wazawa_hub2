@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px;  /* To avoid header overlap */
+}
+.content{
+    margin-left: 12px;
+    margin-right: 6px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+h2 {
+    color: #2196F3;
+}
+
+form {
+    margin: 50px auto;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 20px;
+    }
+}
+
+
+.activity-card {
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.activity-card h3 {
+    color: #4CAF50;
+}
+
+.activity-card p {
+    color: #333;
+}
+
+.activity-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.activity-card ul li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #1976D2;
+}
+
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #4CAF50; /* Primary color */
+    padding-top: 20px;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #2196F3; /* Secondary color */
+    color: white;
+}
+
+.sidebar ul h3 {
+    color: #FFEB3B; /* Accent color */
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+
+.content {
+    margin-left: 260px; /* Ensure the content is pushed to the right of the sidebar */
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust sidebar for smaller screens */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .sidebar ul li {
+        text-align: center;
+    }
+    
+    .content {
+        margin-left: 0;
+    }
+}
