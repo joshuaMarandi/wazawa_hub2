@@ -11,6 +11,7 @@ include 'sidebar.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <title>Admin Dashoard -Wazawa Hub</title>
 </head>
 <body>

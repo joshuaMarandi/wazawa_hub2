@@ -1,56 +1,70 @@
-.openbtn {
-    font-size: 20px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 2;
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px; /* Prevent overlap with the header */
 }
 
-.openbtn:hover {
-    background-color: #45a049;
-}
-
+/* Sidebar styles */
 .sidebar {
-    height: 100%;
-    width: 250px;
+    width: 250px; /* Sidebar width */
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #4CAF50;
+    height: 100%;
+    background-color: #4CAF50; /* Primary color */
     padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    transition: 0.5s;
     z-index: 1;
-    overflow-x: hidden;
+    transition: transform 0.3s ease; /* Smooth transition */
 }
 
-/* Hide sidebar on small screens */
 .sidebar.closed {
-    width: 0;
+    transform: translateX(-100%); /* Hide sidebar */
+}
+
+/* Sidebar header */
+.sidebar h2 {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+/* Sidebar links */
+.sidebar ul {
+    list-style-type: none;
     padding: 0;
-    display: none;
 }
 
-@media screen and (max-width: 600px) {
+.sidebar ul li {
+    padding: 15px 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #2196F3; /* Secondary color */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
     .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
+        width: 50%; /* Half width when displayed */
+        transform: translateX(-100%); /* Initially hide sidebar */
     }
-}
 
-.content {
-    padding: 20px;
-    margin-left: 250px;
-    transition: margin-left 0.5s;
-}
+    .sidebar.open {
+        transform: translateX(0); /* Show sidebar when open */
+    }
 
-.content.collapsed {
-    margin-left: 0;
+    button.openbtn {
+        display: block; /* Show the toggle button on small screens */
+        position: fixed; /* Keep it fixed for easy access */
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+    }
 }

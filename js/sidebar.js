@@ -1,13 +1,10 @@
+// Get the toggle button and sidebar elements
+const toggleButton = document.querySelector('.openbtn');
+const sidebar = document.querySelector('.sidebar');
 
-function toggleSidebar() {
-    var sidebar = document.getElementById("mySidebar");
-    var content = document.querySelector(".content");
-
-    if (sidebar.classList.contains("closed")) {
-        sidebar.classList.remove("closed");
-        content.classList.remove("collapsed");
-    } else {
-        sidebar.classList.add("closed");
-        content.classList.add("collapsed");
-    }
-}
+// Add a click event listener to the toggle button
+toggleButton.addEventListener('click', function() {
+    // Toggle the 'open' class on the sidebar to show/hide it
+    sidebar.classList.toggle('open');
+    sidebar.classList.toggle('closed');
+});

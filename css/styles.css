@@ -1,18 +1,25 @@
+/* General page styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding-top: 60px;  /* To avoid header overlap */
+    padding-top: 60px;  /* Prevent overlap with the header */
 }
-.content{
+
+.content {
     margin-left: 12px;
     margin-right: 6px;
 }
+
 button {
     background-color: #4CAF50;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 h2 {
@@ -33,17 +40,7 @@ input, select {
     border-radius: 4px;
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
-@media (max-width: 600px) {
-    .header h1 {
-        font-size: 20px;
-    }
-}
-
-
+/* Activity card styles */
 .activity-card {
     background-color: #FFF;
     border: 1px solid #ddd;
@@ -83,7 +80,6 @@ button:hover {
 .btn:hover {
     background-color: #1976D2;
 }
-
 
 /* Sidebar styles */
 .sidebar {
@@ -130,25 +126,29 @@ button:hover {
     margin-top: 20px;
 }
 
-
+/* Content styles */
 .content {
     margin-left: 260px; /* Ensure the content is pushed to the right of the sidebar */
     padding: 20px;
 }
 
+/* Responsive design */
 @media screen and (max-width: 768px) {
     /* Adjust sidebar for smaller screens */
     .sidebar {
-        width: 100%;
+        width: 100%; /* Full width on smaller screens */
         height: auto;
         position: relative;
+        display: none; /* Initially hide the sidebar */
     }
-    
-    .sidebar ul li {
-        text-align: center;
+
+    .sidebar.open {
+        display: flex; /* Show sidebar when open */
+        flex-direction: column; /* Arrange items vertically */
     }
-    
+
     .content {
-        margin-left: 0;
+        margin-left: 0; /* Remove margin on smaller screens */
     }
 }
+
