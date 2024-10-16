@@ -113,6 +113,7 @@ $total_money = $result_money['total_money'] ?? 0
     }
 }
 
+
 @media screen and (max-width: 768px) {
     .dashboard-boxes {
         flex-direction: column; /* Stack boxes vertically on smaller screens */
@@ -122,6 +123,8 @@ $total_money = $result_money['total_money'] ?? 0
     .box {
         width: 80%; /* Full width on smaller screens */
     }
+
+
 
     .statistics {
         width: 90%;
@@ -143,6 +146,7 @@ $total_money = $result_money['total_money'] ?? 0
         font-size: 18px; /* Reduce text size on smaller screens */
     }
 }
+
 .btn-view {
     background-color: #4CAF50; /* Primary button color */
     color: white; /* Text color */
@@ -153,10 +157,12 @@ $total_money = $result_money['total_money'] ?? 0
     transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
 }
 
+
 .btn-view:hover {
     background-color: #45a049; /* Darker shade on hover */
     transform: translateY(-2px); /* Slightly lift the button on hover */
 }
+
 
     </style>
 </head>
