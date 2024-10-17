@@ -137,6 +137,7 @@ $total_money = $result_money['total_money'] ?? 0
         width: 100%; /* Take full width on very small screens */
     }
 
+
     .view-button a {
         font-size: 14px; /* Adjust button text size */
         padding: 8px 15px; /* Smaller padding for smaller screens */
